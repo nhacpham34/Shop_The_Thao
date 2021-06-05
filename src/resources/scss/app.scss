@@ -1,0 +1,361 @@
+@import '_variables';
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    line-height: 16px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+    -webkit-list-style: none;
+}
+
+.grid {
+    width: 1500px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.gridhd {
+    width: 1024px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.text-white {
+    color: #fff;
+}
+
+//
+.app {
+    width: 100%;
+    margin: auto;
+}
+.t {
+    border-top: 1px solid rgb(212, 212, 212);
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+
+.header-top {
+    height: 40px;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    align-items: center;
+}
+.header-top__slogan {
+    text-decoration: none;
+    color: $text-color;
+}
+
+.header-top__item a {
+    color: $text-color;
+    text-decoration: none;
+    padding: 0 4px;
+}
+
+.header-body {
+    height: 70px;
+    max-height: 70px;
+}
+
+.navbar__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__item-logo {
+    height: 65px;
+}
+
+.navbar__item-list {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__item-sectors {
+    line-height: 65px;
+    font-size: 1.6rem;
+    margin: 0 8px;
+    padding: 0 8px;
+    position: relative;
+    font-weight: 600;
+}
+
+.search {
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+.search-input {
+    padding: 8px;
+    font-size: 1.6rem;
+    border: none;
+    background-color: #fff;
+}
+
+/* app slider */
+.app-slider {
+    background-color: #f7f7f7;
+    height: 62px;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    line-height: 62px;
+}
+
+.icon {
+    margin: 0 8px;
+}
+.slider-content {
+    width: 800px;
+    text-align: center;
+}
+
+/* container */
+
+.container {
+    margin-bottom: 70px;
+}
+
+.container__title {
+    text-align: center;
+    font-size: 3.2rem;
+    margin-top: 10rem;
+    font-weight: 700;
+}
+
+.container__description {
+    font-size: 1.6rem;
+    color: $text-color;
+    margin-top: 32px;
+    text-align: center;
+}
+
+.container__item {
+    display: flex;
+    justify-content: center;
+}
+
+.container__item-link {
+    font-size: 1.6rem;
+    margin: 42px 16px;
+    font-weight: bold;
+}
+
+.container__product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product__item {
+    max-width: 350px;
+    margin: 8px 8px;
+    box-shadow: 0.5px 0.5px 4px #999, -0.5px 0.5px 4px rgb(235, 235, 235);
+}
+
+.product__box {
+    text-align: center;
+    font-size: 1.4rem;
+    height: 160px;
+}
+
+.product__size {
+    display: block;
+    font-size: 1.1rem;
+    color: $text-color;
+    margin: 8px 0px;
+    text-transform: uppercase;
+}
+
+.product__box-title {
+    display: block;
+    font-size: 1.4rem;
+    color: rgb(145, 145, 145);
+    font-weight: 400;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+.product__price {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.product__buy {
+    margin: 24px 0;
+    height: 32px;
+    width: 112px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/* footer */
+
+.contact {
+    width: 100%;
+    background: url(http://mauweb.monamedia.net/bitis/wp-content/uploads/2018/03/EVERGREEN_HP_DESK_GBL_EMAIL_SIGNUP.jpg)
+        no-repeat top / cover;
+    text-align: center;
+}
+
+.contact__gmail {
+    display: block;
+    font-size: 2.2rem;
+    padding-top: 130px;
+    color: rgb(145, 145, 145);
+    font-weight: 600;
+}
+
+.contact__text {
+    font-size: 1.6rem;
+    margin: 16px 0;
+}
+.contact__signup {
+    text-decoration: none;
+    color: $text-color;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    display: block;
+}
+
+.info {
+    background-color: #000;
+    color: $text-color;
+}
+
+.info__content {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+
+.info__item {
+    font-size: 1.4rem;
+    margin: 0 60px 0 0;
+    height: 180px;
+}
+.info__item:first-child {
+    color: #fff;
+}
+
+.info__item li {
+    line-height: 26px;
+}
+
+.info__list {
+    justify-content: space-between;
+    display: flex;
+}
+
+.social__list {
+    display: flex;
+    font-size: 2.4rem;
+    padding-right: 100px;
+}
+
+.social__item {
+    margin: 0 12px;
+}
+
+.coppyright {
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 24px 0;
+}
+
+.coppyright a {
+    text-decoration: none;
+    color: rgb(226, 226, 226);
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: 1px 1px;
+}
+
+/* sectors */
+.navbar__item-sectors:hover {
+    border-bottom: 3px solid #000;
+    cursor: pointer;
+}
+.navbar__item-sectors:hover .sector-detail {
+    display: flex;
+}
+
+.sector-detail {
+    background-color: #fff;
+    position: absolute;
+    left: -8px;
+    top: 70px;
+    display: flex;
+    padding: 16px 0;
+    border: 2px solid #ddd;
+    display: none;
+}
+
+.sector-detail::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: -7px;
+    left: 0;
+    height: 10px;
+    width: 100%;
+}
+
+.sector-detail__list {
+    border-right: 1px solid #ddd;
+    width: 160px;
+}
+
+.sector-detail__item {
+    height: 32px;
+}
+
+.sector-detail__item-title {
+    display: block;
+    padding: 0 16px;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-shadow: 1px 1px #ccc;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 32px;
+}
+
+.sector-detail__item-link {
+    display: block;
+    padding: 0 16px;
+    font-size: 1.4rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    line-height: 32px;
+    color: rgb(110, 110, 110);
+}
