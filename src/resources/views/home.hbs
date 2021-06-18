@@ -1,1 +1,83 @@
-<h2>Hello</h2>
+<div class="app-slider">
+    <div class="slider">
+        <i class="fas fa-angle-left icon"></i>
+        <div class="slider-content">
+            <i class="fas fa-box icon"></i>
+            <span class="slider-text">Free international delivery to you</span>
+        </div>
+        <i class="fas fa-angle-right icon"></i>
+    </div>
+</div>
+
+
+<div class="main">
+                <!-- shop men -->
+                <div id="men" class="containe">
+                    <img src="http://mauweb.monamedia.net/bitis/wp-content/uploads/2018/03/slideshow_1.jpg" alt="" width="100%">
+                    <div class="grid">
+                        <h1 class="container__title">
+                            SHOP MEN’S
+                        </h1>
+                        <p class="container__description">Boasting the biggest heel air bag yet, bringing you
+                            even closer to the feeling of walking on air.
+                        </p>
+                        <ul class="container__item">
+                            <li class="container__item-link">Shoes</li>
+                            <li class="container__item-link">Clothing</li>
+                            <li class="container__item-link">Gear</li>
+                        </ul>                    
+                    </div>
+                    <div class="grid container__product">
+                        {{#each productsMen}}
+                        <a href="/products/{{this.slug}}" class="product__item">
+                            <div class="product__image">
+                                <img src="{{this.image}}" alt="">
+                            </div>
+                            <div class="product__box">
+                                <span class="product__size">{{this.size}}</span>
+                                <h3 class="product__box-title">
+                                    {{this.name}}
+                                </h3>
+                                <p class="product__price">{{this.price}} đ</p>
+                                <button class="product__buy">Thêm vào giỏ</button>
+                            </div>
+                        </a>
+                        {{/each}}
+
+                    </div>
+                </div>
+                <!-- shop boy's -->
+                <div id="boys" class="containe">
+                    <img src="http://mauweb.monamedia.net/bitis/wp-content/uploads/2018/03/slideshow_5.jpg" alt="" width="100%">
+                    <div class="grid">
+                        <h1 class="container__title">
+                            SHOP BOY’S
+                        </h1>
+                        <p class="container__description">The Air Max styles kids love—from the ’87 original, Air Max 1,
+                            to the new larger-than-life Air Max 270.
+                        </p>
+                        <ul class="container__item">
+                            <li class="container__item-link">Shoes</li>
+                            <li class="container__item-link">Clothing</li>
+                            <li class="container__item-link">Gear</li>
+                        </ul>                    
+                    </div>
+                    <div class="grid container__product">
+                        {{#each productsBoy}}
+                        <a href="/products/{{this.slug}}" class="product__item">
+                            <div class="product__image">
+                                <img src="{{this.image}}" alt="">
+                            </div>
+                            <div class="product__box">
+                                <span class="product__size">{{this.size}}</span>
+                                <h3 class="product__box-title">
+                                    {{this.name}}
+                                </h3>
+                                <p class="product__price">{{this.price}} đ</p>
+                                <button class="product__buy">Thêm vào giỏ</button>
+                            </div>
+                        </a>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>

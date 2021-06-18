@@ -1,0 +1,73 @@
+.header {
+    border-bottom: 1px solid #ccc;
+}
+
+
+.detail-header{
+    display: flex;
+    font-size: 2.4rem;
+    justify-content:space-between;
+    align-items:center;
+    height: 64px;
+}
+
+.detail-header__item{
+    display: flex;
+    text-transform: uppercase;
+}
+
+.detail__title {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    color: #000;
+    text-transform: uppercase;
+}
+.detail__price {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin: 16px 0;
+}
+.detail__description {
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+/* create form */
+.create-form{
+    padding: 40px 0;
+    font-size: 1.6rem;
+}
+
+.form-group{
+    font-size: 1.6rem;
+    margin: 8px 0;
+    padding: 8px 0;
+}
+
+
+.select-all-option{
+    width: 155px;
+    margin: 0 8px;
+    font-size:1.6rem;
+    display: block;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn {
+    font-size: 1.6rem;
+}
+
+.form-check-all{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.form-check-label {
+    padding-left: 8px;
+}

@@ -1,0 +1,37 @@
+<div class="create-form grid wide">
+    <h3>Cập nhật SẢN PHẨM</h3>
+
+    <form method="POST" action="/products/{{product._id}}?_method=PUT">
+        <div class="form-group row ">
+            <label  class="col l-2">name</label>
+            <input name="name" value="{{product.name}}" type="text" class="form-control col l-10" id="name">
+        </div>
+        <div class="form-group row">
+            <label class="col l-2">description</label>
+            <input name="description" value="{{product.description}}" type="text" class="form-control col l-10" id="description">
+        </div>
+        <div class="form-group row">
+            <label class="col l-2">image</label>
+            <input name="image" value="{{product.image}}" type="text" class="form-control col l-10" id="image">
+        </div>
+        <div class="form-group row">
+            <label class="col l-2">Price</label>
+            <input name="price" value="{{product.price}}" type="text" class="form-control col l-10" id="price">
+        </div>
+        <div class="form-group row">
+            <label class="col l-2">Size</label>
+            <input name="size" value="{{product.size}}" type="text" class="form-control col l-10" id="size">
+        </div>
+        <div class="form-group row">
+            <label class="col l-2">Type</label>
+            <select class="select-all-option" name="type" class="form-control col l-10" id="type" required> 
+                <option value="{{product.type}}" >{{product.type}}</option>
+                <option value="men">MEN</option>
+                <option value="boys">BOYS</option>
+                <option value="women">WOMEN</option>
+                <option value="girls">GIRLS</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Lưu</button>
+    </form>
+</div>
